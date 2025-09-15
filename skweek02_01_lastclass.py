@@ -57,7 +57,7 @@ for product in products:
 
 # 제품 추가
 product2 = Product("전자레인지", 1000000, 15)
-
+products.append(product2)
 #제품 삭제
 del products[1]
 
