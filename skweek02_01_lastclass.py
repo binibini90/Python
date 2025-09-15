@@ -54,3 +54,13 @@ products[1].product_price *= 1.1
 # 제품 출력
 for product in products:
     print(product)
+
+# 제품 추가
+product2 = Product("전자레인지", 1000000, 15)
+
+#제품 삭제
+del products[1]
+
+#현재 모든 제품의 수량
+total_stock = sum(product.product_stock for product in products)
+print(' 현재 모든 제품의 수량 : {}'.format(total_stock))
